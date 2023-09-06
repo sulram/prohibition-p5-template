@@ -1,0 +1,18 @@
+{
+  "name": "prohibition-fesq-genesis",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "compile": "vite build -c vite.config.compile.js",
+    "preview": "vite preview",
+    "batch": "node batch.js"
+  },
+  "devDependencies": {
+    "puppeteer": "^20.7.3",
+    "vite": "^4.3.2",
+    "vite-plugin-glsl": "^1.1.2"
+  }
+}

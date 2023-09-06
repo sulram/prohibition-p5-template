@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/prohibition.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prohibition p5 template</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div
+      id="app"
+      class="w-full h-auto md:h-full flex flex-col md:flex-row gap-4 justify-center items-center"
+    > 
+      <div class="">
+        <div id="canvas" class="flex flex-col justify-center items-center [&>canvas]:p-4 [&>canvas]:!w-auto [&>canvas]:!h-[60vh] [&>canvas]:md:!h-[90vh]"></div>
+      </div>
+      <div class="flex flex-col gap-10">
+        <header>
+          <h1 class="text-white">Prohibition p5 template</h1>
+          <h2 class="text-neutral-500 text-sm">work in progress - DO NOT SHARE</h2>
+        </header>
+        <div class="flex flex-row">
+          <pre id="debug--traits" class="hidden md:block p-4 text-xs bg-neutral-950 text-neutral-500">
+            loading...
+          </pre>
+          <pre id="debug--params" class="hidden md:block p-4 text-[10px] bg-neutral-950 text-neutral-700">
+          </pre>
+        </div>
+        <input
+          id="input-hash"
+          type="text"
+          class="bg-transparent text-neutral-500 font-mono text-xs w-full truncate"
+          value=""
+        />
+        <div class="flex gap-2">
+          <button
+            id="btn-new"
+            class="bg-neutral-900 hover:bg-neutral-800 text-neutral-500 px-4 py-1 rounded-full"
+          >
+            new hash
+          </button>
+          <button
+            id="btn-reload"
+            class="bg-neutral-900 hover:bg-neutral-800 text-neutral-500 px-4 py-1 rounded-full"
+          >
+            reload
+          </button>
+          <button
+            id="btn-save"
+            class="bg-neutral-900 hover:bg-neutral-800 text-neutral-500 px-4 py-1 rounded-full disabled:opacity-[0.5]"
+          >
+            save 4k
+          </button>
+          <button
+            id="btn-save-low"
+            class="bg-neutral-900 hover:bg-neutral-800 text-neutral-500 px-4 py-1 rounded-full disabled:opacity-[0.5]"
+          >
+            save 1k
+          </button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/index.js"></script>
+  </body>
+</html>
